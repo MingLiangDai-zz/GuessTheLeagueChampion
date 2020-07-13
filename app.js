@@ -3,7 +3,7 @@ var score = 0;
 const badScore = 10;
 const decentScore = 20;
 const getChampionNames = async () => {
-    const url = "http://ddragon.leagueoflegends.com/cdn/9.3.1/data/en_US/champion.json";
+    const url = "https://ddragon.leagueoflegends.com/cdn/9.3.1/data/en_US/champion.json";
     const res = await fetch(url);
     const json = await res.json();
     return Object.keys(json.data);
@@ -22,7 +22,7 @@ async function getRandomChampions() {
 }
 
 const getChampionJson = async (champName) => {
-    const url = `http://ddragon.leagueoflegends.com/cdn/10.14.1/data/en_US/champion/${champName}.json`;
+    const url = `https://ddragon.leagueoflegends.com/cdn/10.14.1/data/en_US/champion/${champName}.json`;
     const res = await fetch(url);
     const json = await res.json();
     return json.data[champName];
@@ -70,7 +70,7 @@ const run = async () => {
 
 const getChampionImage = async (champName, num) => {
     var img = new Image();
-    const url = `http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champName}_${num}.jpg`;
+    const url = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champName}_${num}.jpg`;
     const imgCard = document.querySelector("#img-card");
     imgCard.append(img);
     img.src = url;
