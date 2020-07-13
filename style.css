@@ -1,0 +1,13 @@
+.max-width {
+    max-width: 1000px;
+}
+
+.image-wrapper {
+    height: 500px;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    height: 100%;
+    background-image: linear-gradient(rgba(20,21,24,1), rgba(32,36,65,1));
+}
