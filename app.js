@@ -97,21 +97,21 @@ const lose = () => {
     if (score <= badScore) {
         imgCard.innerHTML = `
             <img src="images/Emblem_Iron.png" class="h-100" />
-             <h5 class="text-center">
+             <h5 class="text-center text-light">
                 Yikers bro! You only got a score of <span class="text-success">${score}</span>! Gotta grind more League...
             </h5>
         `;
     } else if (score <= decentScore) {
         imgCard.innerHTML = `
             <img src="images/Emblem_Platinum.png" class="h-100" />
-            <h5 class="text-center">
+            <h5 class="text-center text-light">
                 Hey not bad! You got <span class="text-success">${score}</span> right!
             </h5>
         `;
     } else {
         imgCard.innerHTML = `
             <img src="images/Emblem_Challenger.png" class="h-100" />
-            <h5 class="text-center">
+            <h5 class="text-center text-light">
                 Seriously? Either this quiz is too easy or you play too much League. <span class="text-success">${score}</span>!
             </h5>
         `;
